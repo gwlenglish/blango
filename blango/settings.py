@@ -19,6 +19,8 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
 
+AUTH_USER_MODEL = "blango_auth.User"
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -87,6 +89,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # Application definition
 
 INSTALLED_APPS = [
+    'blango_auth',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
